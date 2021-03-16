@@ -187,6 +187,7 @@ h3 {
     width: 100%;
     border-radius: 10px;
     margin-bottom: 2rem;
+    background-color: #f6f6f6;
     box-shadow: 0.3rem 0.3rem 10px #c9c9c9;
 }
 
@@ -207,6 +208,7 @@ h3 {
     width: 100%;
     border-radius: 10px;
     margin-bottom: 2rem;
+    background-color: #f6f6f6;
     box-shadow: 0.3rem 0.3rem 10px #c9c9c9;
 }
 
@@ -214,6 +216,7 @@ h3 {
     width: 100%;
     border-radius: 10px;
     margin-bottom: 2rem;
+    background-color: #f6f6f6;
     box-shadow: 0.3rem 0.3rem 10px #c9c9c9;
 }
 
@@ -251,7 +254,7 @@ h3 {
     }
     .presentation {
         width: 20%;
-
+        
     }
     
     .parcours {
@@ -262,6 +265,14 @@ h3 {
     .experiences {
         width: 38%;
 
+    }
+
+    .bas {
+        min-height: 21rem;
+
+        padding-bottom: 1rem;
+
+        
     }
 }
 
