@@ -1,0 +1,506 @@
+/* polices*/
+/* import de la police roboto de google */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+
+
+/* style base */
+
+a {
+    text-decoration: none; /*enlève le soulignement des liens*/
+  }
+
+a :hover {
+    cursor: pointer; /* choix forme pointeur de la souris au survol*/
+}
+  
+* {
+    box-sizing: border-box;    /*indique au navigateur de prendre en compte la bordure et le remplissage dans la valeur définie pour la largeur et la hauteur*/
+    font-family: "Roboto", sans-serif; /* utilise la police roboto de google*/
+}
+  
+body {
+    margin: 0 0 0 0; /*marge de 0 sur tous les côtés du body (haut droite bas gauche) */
+    /*background-color: #f6f6f6;*/
+    background-color: #eaeaea;
+}
+
+/* fin style base */
+
+/*################# PAGE INDEX ###############*/
+
+.header {
+    margin-left: 4vw;
+    margin-right: 4vw;
+    margin-bottom: 2rem;
+}
+
+.avatar {
+    width: 155px;
+    height: 155px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px;
+}
+
+.portrait {
+    border-radius: 100px;
+    box-shadow: 0.2rem 0.2rem 10px #a0a0a0;
+}
+
+.bloc__citation {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.citation {
+    
+    /*font-style: italic;*/
+    font-size: 0.8rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* début style contacts */
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+    .contact {
+        width: 25%;
+    }
+}
+
+.box__social {
+    width: 3rem;
+    height: 3rem;
+    background-color: #0284DF;
+    padding-top: 0.7rem;
+    /*border: solid 1px #0284DF;*/
+    border-radius: 50px;
+    box-shadow: 0.1rem 0.1rem 5px #29a4fc;
+}
+
+.box__social:hover {
+    background: linear-gradient(0deg, #0284DF, #0096ff);
+    cursor: pointer;
+}
+
+.box__social--logo {
+    color: white;
+    font-size: 1.5rem;
+    
+}
+
+/* fin style contacts */
+
+
+/* style liens navigation */
+
+.liens {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    /*background-color: #9356dc;*/
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+
+
+.quart {
+    width: 48%;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    margin-bottom: 1rem;
+    background-color: #e0e0e0;
+    color: black;
+    border-radius: 10px;
+    font-weight: 500;
+    box-shadow: 0.1rem 0.1rem 5px #c9c9c9;
+}
+
+.quart:hover {
+    /*background: linear-gradient(0deg, #9356dc, #ac6afa);*/
+    background-color: #f5edff;
+    cursor: pointer;
+}
+
+.quart:hover > .icone {
+    color: #9356dc;
+}
+
+.icone {
+    margin-right: 1rem;
+    color: #7e7e7e;
+}
+
+@media (min-width: 768px) {
+    .quart {
+        width: 20%;
+    }
+    
+}
+
+/* fin style liens navigation */
+
+
+/* début style main */
+
+.main {
+    /*background-color: #f6f6f6;*/
+    padding: 2rem 4vw 2rem 4vw;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+h3 {
+    text-align: center;
+    margin-top: -0.5rem;
+    color: white;
+}
+
+.presentation {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 0.3rem 0.3rem 10px #c9c9c9;
+}
+
+.presentation ul {
+    list-style-type: none;
+}
+
+.presentation li {
+    margin-top: 0.5rem;
+}
+
+.decalage {
+    margin-left: 1rem;
+
+}
+
+.parcours {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 0.3rem 0.3rem 10px #c9c9c9;
+}
+
+.experiences {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 0.3rem 0.3rem 10px #c9c9c9;
+}
+
+.haut {
+    height: 6rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #9356dc;
+    padding-top: 1rem;
+}
+
+.bas {
+    min-height: 16rem;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: -3.5rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    padding-left: 3rem;
+    padding-right: 2rem;
+    background-color: #f6f6f6;
+    
+}
+
+.bas ul {
+    padding-left: 0px;
+}
+
+@media (min-width: 1024px) {
+    .main {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .presentation {
+        width: 20%;
+
+    }
+    
+    .parcours {
+        width: 38%;
+
+    }
+    
+    .experiences {
+        width: 38%;
+
+    }
+}
+
+/* fin style main */
+
+
+
+
+
+
+/*################# PAGE COMPÉTENCES ###############*/
+
+
+
+
+
+
+.competences__haut {
+    height: 6rem;
+
+    background-color: #9356dc;
+    padding-top: 1rem;
+}
+
+.competences__bas {
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    margin-top: -3.5rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    padding-left: 3rem;
+    padding-right: 2rem;
+    background-color: #eaeaea;
+    text-align: center;
+}
+
+.element {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.element__haut {
+    margin-top: 2rem;
+}
+
+hr {
+    border: none;
+    border-top: solid 1px #333;
+    overflow: visible;
+    text-align: center;
+    height: 1px;
+    width: 90%;
+}
+
+@media (min-width: 1024px) {
+    .element {
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: row;
+    }
+    .element__etoiles {
+        display: flex;
+        flex-direction: row;
+        width: 20%;
+        align-self: center;
+        justify-content: flex-end;
+    }
+
+    .element p {
+        width: 80%;
+        text-align: left;
+    }
+
+    hr {
+        border: none;
+        border-top: solid 1px #333;
+        overflow: visible;
+        text-align: center;
+        height: 1px;
+        width: 40%;
+    }
+}
+
+.bleu {
+    color: #005bfb;
+}
+
+.gris {
+	color: #d6d6d6;
+}
+
+
+
+
+/*################# PAGE INTERETS ###############*/
+
+
+.interet__haut {
+    height: 6rem;
+    background-color: #9356dc;
+    padding-top: 1rem;
+}
+
+.interet__bas {
+
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    margin-top: -3.5rem;
+    padding: 1rem 1rem 1rem 1rem;
+    background-color: #eaeaea;
+    /*text-align: center;*/
+}
+
+.interet__bas img {
+    object-fit: cover;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    margin-top: 1rem;
+    width: 90vw;
+    height: 95%;
+    box-shadow: 0.3rem 0.3rem 10px #c9c9c9;
+}
+
+.interet__bas li {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    background-color: white;
+    width: 90vw;
+    height: 50vh;
+    border-radius: 40px;
+    box-shadow: 0.3rem 0.3rem 10px #c9c9c9;
+    
+}
+
+.liste {
+    padding-top: 1rem;
+    height: 2vh;
+}
+
+ol {
+    text-align: center;
+    list-style-position: inside;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 1rem;
+}
+
+@media (min-width: 1024px) {
+    .interet__bas img {
+        width: 50vw;
+        height: 96%;
+        box-shadow: 0.3rem 0.3rem 10px #c9c9c9;
+        
+    }
+    
+    .interet__bas li {
+        width: 50vw;
+        height: 60vh;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*################# BOUTON RETOUR ###############*/
+
+
+
+
+.retour {
+    
+    text-align: center;
+    width: 10rem;
+    height: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
+    margin-top: 2rem;
+    border-radius: 20px;
+    padding-top: 0.45rem;
+    background-color: #9356dc;
+    box-shadow: 0.1rem 0.1rem 5px #c0c0c0;
+}
+
+.retour a {
+    color: white;
+    font-weight: 500;
+}
+
+
+
+
+
+/*################# FOOTER ###############*/
+
+/* début style footer */
+
+footer {
+    width: 100%;
+    height: 7.5rem;
+    padding-top: 1rem;
+    /*background-color: #9356dc;*/
+    background-color: #353535;
+}
+
+footer ul {
+    list-style-type: none;
+    padding-left: 0px;
+    margin-left: 4vw;
+}
+
+footer li {
+    margin-bottom: 1rem;
+}
+
+footer a {
+    color: white;
+    font-weight: 500;
+}
+
+.icone__footer {
+    margin-right: 1rem;
+} 
+/* fin style footer */
